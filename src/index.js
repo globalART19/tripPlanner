@@ -1,3 +1,6 @@
+// import { builtinModules } from 'module';
+import addMarker from './marker';
+
 console.log('Or something')
 
 const mapboxgl = require('mapbox-gl')
@@ -17,3 +20,5 @@ markerDomEl.style.height = "39px";
 markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
 new mapboxgl.Marker(markerDomEl).setLngLat([-87.639, 41.8954]).addTo(map)
+
+// modules.exports = map;
