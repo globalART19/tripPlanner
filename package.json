@@ -5,7 +5,7 @@
   "main": "public/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack -w"
+    "build": "webpack -w"
   },
   "author": "Andrew and Minh",
   "license": "ISC",
