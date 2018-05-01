@@ -1,5 +1,3 @@
-// import { builtinModules } from 'module';
-
 const mapBoxgl = require('mapbox-gl');
 
 function addMarker(markerType, coordinates) {
@@ -10,20 +8,16 @@ function addMarker(markerType, coordinates) {
             markerDomEl = markerElem('http://i.imgur.com/WbMOfMl.png');
             retmarker = new mapBoxgl.Marker(markerDomEl).setLngLat(coordinates);
             break;
-
         case 'Hotel':
             markerDomEl = markerElem('http://i.imgur.com/D9574Cu.png');
             retmarker = new mapBoxgl.Marker(markerDomEl).setLngLat(coordinates);
             break;
-
         case 'Restaurant':
             markerDomEl = markerElem('http://i.imgur.com/cqR6pUI.png');
             retmarker = new mapBoxgl.Marker(markerDomEl).setLngLat(coordinates);
             break;
-
         default:
             console.log('Please check....');
-
     }
     return retmarker;
 }
