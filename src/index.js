@@ -13,9 +13,9 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10"
 })
 
-const newMarker = addMarker('Hotel', [-87.639, 41.8954])
-newMarker.addTo(map)
-const newMarker2 = addMarker('Activity', [-87.739, 41.8954])
-newMarker2.addTo(map)
-const newMarker3 = addMarker('Restaurant', [-87.539, 41.8954])
-newMarker3.addTo(map)
+// const newMarker = addMarker('Hotel', [-87.639, 41.8954])
+// newMarker.addTo(map)
+// const newMarker2 = addMarker('Activity', [-87.739, 41.8954])
+// newMarker2.addTo(map)
+// const newMarker3 = addMarker('Restaurant', [-87.539, 41.8954])
+// newMarker3.addTo(map)
