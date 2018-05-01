@@ -1,4 +1,3 @@
-// import { builtinModules } from 'module';
 import addMarker from './marker';
 
 console.log('Or something')
@@ -14,11 +13,17 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10"
 })
 
-const markerDomEl = document.createElement("div"); // Create a new, detached DIV
-markerDomEl.style.width = "32px";
-markerDomEl.style.height = "39px";
-markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
+// const markerDomEl = document.createElement("div"); // Create a new, detached DIV
+// markerDomEl.style.width = "32px";
+// markerDomEl.style.height = "39px";
+// markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
-new mapboxgl.Marker(markerDomEl).setLngLat([-87.639, 41.8954]).addTo(map)
+// new mapboxgl.Marker(markerDomEl).setLngLat([-87.639, 41.8954]).addTo(map)
 
-// modules.exports = map;
+
+const newMarker = addMarker('Hotel', [-87.639, 41.8954])
+newMarker.addTo(map)
+const newMarker2 = addMarker('Activity', [-87.739, 41.8954])
+newMarker2.addTo(map)
+const newMarker3 = addMarker('Restaurant', [-87.539, 41.8954])
+newMarker3.addTo(map)
