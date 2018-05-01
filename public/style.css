@@ -3,9 +3,18 @@
 }
 
 body {
-  margin: 2;
+  margin: 0;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   background-color: #C1B5AD;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+.options {
+  /* margin: .5em 0 .5em 0em */
 }
 
 #map {
@@ -16,8 +25,16 @@ body {
 #addpanel {
   float: right;
   position: relative;
-  height: 100px;
-  width: 200px;
+  width: 25em;
   background-color: blueviolet;
-  z-index: 2;
+  z-index: 1;
+}
+
+#itinerarypanel {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 25em;
+  background-color: greenyellow;
+  z-index: 1;
 }
