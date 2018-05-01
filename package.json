@@ -2,9 +2,10 @@
   "name": "tripplanner",
   "version": "1.0.0",
   "description": "Lets plan some trips!!",
-  "main": "index.js",
+  "main": "public/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -w"
   },
   "author": "Andrew and Minh",
   "license": "ISC",
